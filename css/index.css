@@ -1,0 +1,225 @@
+@charset "utf-8"; *,
+*:before,
+*:after { box-sizing: border-box; } 
+body { background-color: #fff9fa; } 
+a { color: inherit; text-decoration: none; } 
+
+/* title 영역 시작 */
+.title_wrap { position: relative; margin: 80px 0 50px; text-align: center; } 
+.title_wrap .title_1 { font-size: 70px; font-family: 'Roboto'; font-weight: 900; -webkit-text-stroke: 1px #dee2e6; color: #fff; } 
+.title_wrap .title_2 { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 25px; font-family: 'Roboto'; color: #0bceaf; } 
+.subtitle { margin: 20px 0; font-size: 1.3rem; font-weight: bold; } 
+
+/* (모바일) 헤더 영역 시작 */
+header { display: none; position: fixed; width: 100%; z-index: 9999; background-color: #fff; box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); } 
+.navbar { background-color: #fff; } 
+.navbar .mobile_header { display: flex; justify-content: space-between; align-items: center; width: 90%; height:70px; margin: 0 auto; } 
+.navbar .mobile_header .navbar_name { font-size: 32px; font-weight: bold; font-family: 'Roboto'!important; } 
+.navbar .mobile_header .navbar_name .point { color: #0bceaf; } 
+.navbar .mobile_header .ham_img { width: 30px; cursor: pointer; } 
+.navbar .mobile_header .ham_img img { width: 100%; } 
+.navbar .navlist_wrap .navlist li { width: 90%; margin: 0 auto; } 
+.navbar .navlist_wrap .navlist li a { display: block; padding: 10px 0; font-weight: bold; } 
+.navbar .navlist_wrap .navlist li:hover { color: #0bceaf; } 
+
+/* (모바일) home 섹션 영역 시작 */
+#home { width: 100%; height: 100vh; background-color: #0bceaf; } 
+.home_wrap .img_wrap { width: 350px; margin: 0 auto 50px; padding-top: 100px; } 
+.home_wrap .img_wrap img { border-radius: 100%; } 
+.home_text_wrap { text-align: center; color: #fff; } 
+.home_text_wrap .text_1 { margin-bottom: 16px; font-size: 1.5rem; color: #fff; } 
+.home_text_wrap .text_2 { margin-bottom: 36px; font-size: 2.5rem; font-family: 'Roboto'; -webkit-text-stroke: 1px #fff; color: #0bceaf; } 
+.home_text_wrap .text_3 { display: block; line-height: 1.6; height: 50px; margin-bottom: 30px; font-size: 1.8rem; } 
+.home_resume { margin-bottom: 30px; text-align: center; } 
+.home_resume a { padding: 10px 20px; border: 1px solid #fff; border-radius: 30px; font-size: 1rem; color: #fff; } 
+.home_resume a:hover { color: #000; background-color: #fff; } 
+.down_arrow { width: 20px; margin: 0 auto; } 
+.down_arrow img { display: block; width: 100%; animation: down 2s infinite linear; } 
+@keyframes down { 
+ 0% { transform: translateY(0%); } 
+ 20% { transform: translateY(10%); } 
+ 50% { transform: translateY(100%); } 
+ 80% { transform: translateY(10%); } 
+ 100% { transform: translateY(0%); } 
+ }
+
+/* (모바일) About 섹션 영역 시작 */
+#about { width: 90%; height: auto; margin: 0 auto 20px; } 
+.about_text { margin-bottom: 50px; text-align: justify; } 
+.about_text .contents { margin-bottom: 1rem; } 
+.about_me { margin-bottom: 30px; } 
+.about_me .bold { font-weight: bold; } 
+.hire_learn a { padding: 10px 20px; border: 1px solid #0bceaf; border-radius: 30px; font-size: 1rem; color: #0bceaf; } 
+.hire_learn a:hover { color: #fff; background-color: #0bceaf; } 
+
+/* (모바일) Quality 섹션 영역 시작 */
+#quality { width: 90%; height: auto; margin: 0 auto 20px; } 
+.quality_education { margin-bottom: 50px; } 
+.education_box { position: relative; } 
+.education_box .vertical_line { display: inline-block; position: absolute; left: 8px; width: 1px; height: 100%; background-color: #0bceaf; } 
+.education_contents { position: relative; margin-left: 30px; line-height: 1.6; } 
+.education_box .circle { position: absolute; top: 5px; left: -30px; color: #0bceaf; } 
+.education_contents .bold { margin-bottom: 10px; font-size: 1.1rem; font-weight: bold; } 
+.experience_box { position: relative; } 
+.experience_box .vertical_line { display: inline-block; position: absolute; left: 8px; width: 1px; height: 100%; background-color: #0bceaf; } 
+.experience_contents { position: relative; margin:0 0 50px 30px; line-height: 1.6; } 
+.experience_contents .circle { position: absolute; top: 5px; left: -30px; color: #0bceaf; } 
+.experience_contents .bold { margin: 10px 0; font-size: 1.1rem; font-weight: bold; } 
+
+
+/* (모바일) Skill 섹션 영역 시작 */
+#skill { width: 90%; height: auto; margin: 0 auto 20px; } 
+.skill { margin-bottom: 20px; } 
+.skill_text { display: flex; justify-content: space-between; margin-bottom: 5px; font-weight: bold; } 
+.progress { width: 100%; height: 15px; margin-bottom: 10px; background-color: #e9ecef; border-radius: 10px; overflow: hidden; } 
+.progress-bar { width: 0%; height: 100%; border-radius: 10px; background-color: #0bceaf; color: white; transition: width 1s ease; } 
+
+/* (모바일) Portfolio 섹션 영역 시작 */
+#portfolio { width: 90%; height: 100%; margin: 0 auto; overflow: hidden; } 
+.portfolio_select ul { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; } 
+.portfolio_select ul li { width: auto; padding: 10px 20px; border-radius: 30px; border: 1px solid #0bceaf; line-height: 1.6; color: #0bceaf; cursor: pointer; } 
+.portfolio_select ul li:hover,
+.portfolio_select ul li.active { background-color: #0bceaf; color: #fff; } 
+.first { margin-bottom: 20px; background-color: #fbe0fa; border: 1px solid transparent; } 
+.second {margin-bottom: 20px; background-color: #e0e8fb; border: 1px solid transparent; } 
+.third {background-color: #e9eeee; border: 1px solid transparent;}
+.portfolio_mobile { width: 29%; height: auto; margin: 30px auto; } 
+.portfolio_rwd { width: 80%; margin: 30px auto; } 
+.portfolio_item { width: 100%; position: relative; } 
+.portfolio_item .portfolio_btn { position: absolute; width: 0; height: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 4px; background-color: #0bceaf; opacity: 0; transition: 0.5s; } 
+.portfolio_item:hover .portfolio_btn { width: 90%; height: 90%; z-index: 99; opacity: 1; } 
+.plus { position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; font-size: 60px; color: #fff; } 
+
+/* (모바일) Contact 섹션 영역 시작 */
+#contact { width: 90%; height: 100%; margin: 0 auto 200px; } 
+.contact_wrap input { display: block; width: 100%; margin-bottom: 20px; padding: 10px 0 10px 30px; border-radius: 30px; border: 1px solid #e9ecef; line-height: 1.6; font-size: 1.1rem; font-weight: bold; } 
+.contact_wrap .massage { padding-bottom: 150px; } 
+.contact_btn { display: block; margin: 0 auto 20px; padding: 10px 20px; border-radius: 30px; border: 1px solid #0bceaf; background-color: #fff; color: #0bceaf; font-size: 1.1rem; } 
+.contact_btn:hover { background-color: #0bceaf; color: #fff; } 
+.contact_wrap input:focus,
+.contact_wrap button:focus { border-color: #62f7df; box-shadow: 0 0 0 0.2rem rgba(11, 206, 175, 0.25); } 
+
+/* scrolltop */ 
+.top_btn { display: none; position: fixed; right: 30px; bottom: 30px; padding: 15px 10px; z-index: 9999; border-radius: 20px; border: 1px solid #8e9092; background-color: #fff; animation: action 1s infinite alternate; cursor: pointer; box-shadow: 0 0 0 0.2rem rgba(21, 22, 22, 0.25); } 
+.top_btn:hover { background-color: #000; color: #fff; } 
+@keyframes action { 
+ 0% { transform: translateY(0); } 
+ 100% { transform: translateY(-15px); } 
+ }
+
+
+/************************************************** 테블릿 **************************************************/
+
+
+@media screen and (min-width:760px) {
+ /* display none */
+.navbar .mobile_header .ham_img { display: none; } 
+
+ /* (테블릿) 헤더 영역 시작 */
+ .navbar { width: 90%; margin: 0 auto; display: flex; justify-content: space-between; z-index: 9999;} 
+ .navbar .mobile_header { display: block; width: auto; height: 70px; margin:0; line-height: 70px; } 
+ .navlist_wrap { width: 70%; text-align: center; line-height: 45px; } 
+ .navbar .navlist { width: 100%; display: flex; justify-content: center; } 
+
+/* (테블릿) home 섹션 영역 시작 */
+.home_wrap { display: flex; justify-content: center; align-items: center; width: 90%; margin:0 auto; padding-top: 250px; } 
+.home_wrap .img_wrap { width: 427px; margin: 0 50px 0 0; padding: 0; } 
+.home_text_wrap { width: 50%; text-align: left; color: #fff; } 
+.home_text_wrap .text_1 { margin-bottom: 16px; font-size: 1.5rem; color: #fff; } 
+.home_text_wrap .text_2 { margin-bottom: 36px; font-size: 3rem; font-family: 'Roboto'; -webkit-text-stroke: 1px #fff; color: #0bceaf; } 
+.home_text_wrap .text_3 { display: block; line-height: 1.6; height: 50px; margin-bottom: 60px; font-size: 1.5rem; } 
+.down_arrow { width: 20px; margin: 200px auto; } 
+
+/* (테블릿) About 섹션 영역 시작 */
+#about { width: 90%; height: auto; margin: 0 auto 20px; } 
+.about_wrap { display: flex; justify-content: center; align-items: center; } 
+.about_wrap .img_wrap { width: 460px; margin-right: 30px; } 
+.about_text_wrap { width: 50%; } 
+.about_text { margin-bottom: 20px; text-align: justify; } 
+.about_text .subtitle { margin: 20px 0; font-size: 1.1rem; font-weight: bold; } 
+
+
+/* (테블릿) Quality 섹션 영역 시작 */
+#quality { width: 90%; height: auto; margin: 0 auto 20px; } 
+.subtitle { font-size: 2.0rem; } 
+
+
+/* (테블릿) Portfolio 섹션 영역 시작 */
+#portfolio { width: 90%; height: 100%; margin: 0 auto; overflow: hidden; } 
+.portfolio_select ul { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; } 
+.portfolio_select ul li { width: auto; padding: 10px 20px; border-radius: 30px; border: 1px solid #0bceaf; line-height: 1.6; color: #0bceaf; cursor: pointer; } 
+.portfolio_select ul li:hover,
+.portfolio_select ul li.active { background-color: #0bceaf; color: #fff; } 
+.portfolio_box { display: flex; justify-self: start; } 
+.first { background-color: #fbe0fa; border: 1px solid transparent; } 
+.second { background-color: #e0e8fb; border: 1px solid transparent; } 
+.portfolio_mobile { width: 35%; } 
+.portfolio_rwd { width: 80%; margin: 50px auto; } 
+.portfolio_item { width: 32%; margin:0 2% 0 0; position: relative; } 
+.portfolio_item .portfolio_btn { position: absolute; width: 0; height: 0; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 4px; background-color: #0bceaf; opacity: 0; transition: 0.5s; } 
+.portfolio_item:hover .portfolio_btn { width: 90%; height: 90%; z-index: 99; opacity: 1; } 
+.plus { position: absolute; transform: translate(-50%, -50%); top: 50%; left: 50%; font-size: 60px; color: #fff; } 
+
+
+/* (테블릿) Contact 섹션 영역 시작 */
+#contact { width: 740px; height: 100%; margin: 0 auto 200px; } 
+.your_info { display: flex; justify-content: space-between; } 
+.info_contents { width: 49%; } 
+ }
+
+
+ /************************************************** PC **************************************************/
+
+
+ @media screen and (min-width:1280px) {
+/* display none */
+.navbar .mobile_header .ham_img { display: none; } 
+
+ /* (PC) 헤더 영역 시작 */
+ .navbar { width: 1280px; margin: 0 auto; display: flex; justify-content: space-between;z-index: 9999; } 
+ .navlist_wrap { width: 50%; text-align: center; line-height: 45px; } 
+
+/* (PC) home 섹션 영역 시작 */
+.home_wrap { display: flex; justify-content: center; align-items: center; width: 960px; margin:0 auto; padding-top: 250px; } 
+.home_text_wrap .text_1 { margin-bottom: 16px; font-size: 2rem; color: #fff; } 
+.home_text_wrap .text_2 { margin-bottom: 36px; font-size: 4rem; font-family: 'Roboto'; -webkit-text-stroke: 1px #fff; color: #0bceaf; } 
+.home_text_wrap .text_3 { display: block; line-height: 1.6; height: 50px; margin-bottom: 60px; font-size: 2.5rem; } 
+
+/* (PC) About 섹션 영역 시작 */
+#about { width: 1280px; height: auto; margin: 0 auto 20px; } 
+.about_text .subtitle { margin: 20px 0; font-size: 1.5rem; font-weight: bold; }
+.about_me { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 30px; } 
+.about_me_contents { width: 50%; margin-bottom: 5px;} 
+
+/* (PC) Quality 섹션 영역 시작 */
+#quality { width: 1280px; height: auto; margin: 0 auto 20px; } 
+.quality_wrap { display: flex; justify-content: space-around; } 
+
+/* (PC) Skill 섹션 영역 시작 */
+#skill { width: 1280px; height: auto; margin: 0 auto 20px; } 
+.skill_wrap { display: flex; justify-content: space-around; } 
+.skill_wrap_box { width: 45%; } 
+.skill { margin-bottom: 30px; } 
+
+/* (PC) Portfolio 섹션 영역 시작 */
+#portfolio { width: 1280px; height: 100%; margin: 0 auto; overflow: hidden; } 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

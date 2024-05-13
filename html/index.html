@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myeong-gu's profile</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css" />
+    <script src="../js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script type="text/javascript" src="../js/waypoints.min.js"></script>
+    <script type="text/javascript" src="../js/isotope.pkgd.js"></script>
+    <script src="../js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- 헤더 영역 시작 -->
+      <nav class="navbar">
+        <div class="mobile_header">
+          <div class="navbar_name">
+            <a href="#home"><span class="point">Jo</span>MyeongGu</a>
+          </div>
+          <div class="ham_img">
+            <img src="../img/icon/ham.png" alt="" />
+          </div>
+        </div>
+        <div class="navlist_wrap">
+          <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#quality">Quality</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME 영역 시작 -->
+    <section id="home">
+      <div class="home_wrap">
+        <div class="img_wrap">
+          <img src="../img/profile.png" alt="" />
+        </div>
+        <div class="home_text_wrap">
+          <p class="text_1">I'm</p>
+          <p class="text_2">JO MYEONGGU</p>
+          <span class="text_3"></span>
+          <div class="home_resume">
+            <a href="">이력서 Download</a>
+          </div>
+        </div>
+      </div>
+      <div class="down_arrow">
+        <img src="../img/icon/down.png" alt="" />
+      </div>
+
+      <!-- 타이핑 영역 플러그인 시작 -->
+      <script>
+        var options = {
+          strings: ['Front End Developer', 'Web Publisher', 'Web Developer'],
+          typeSpeed: 80,
+          backSpeed: 20,
+          smartBackspace: false,
+          showCursor: false,
+          // cursorChar:'_',
+          loop: true,
+          loopCount: Infinity,
+        };
+        var typed = new Typed('.text_3', options);
+      </script>
+    </section>
+
+    <!-- About 섹션 영역 시작 -->
+    <section id="about">
+      <div class="title_wrap">
+        <p class="title_1">ABOUT</p>
+        <p class="title_2">ABOUT ME</p>
+      </div>
+      <div class="about_wrap">
+        <div class="img_wrap">
+          <img src="../img/about.png" alt="" />
+        </div>
+        <div class="about_text_wrap">
+          <div class="about_text">
+            <p class="subtitle">Web Publisher & Web Developer</p>
+            <p class="contents">“ 41년 만의 이산가족 상봉 ”</p>
+            <p class="contents">
+              그동안 여러 가지 일을 수행했지만 만족스럽거나 적성에 맞는 직업을 찾기가 힘들었습니다. ‘언젠가는 꼭 내게 잘 맞는 일을 해보고 싶다‘는 생각을 하면서 지내던 중 IT 종사자 지인들과 “개발자”라는 직업과 관련해서 대화를 나누게 되었고, 이 경험을 통해 생소했지만 무척 흥미로운 직업으로 각인이
+              되었습니다.
+            </p>
+            <p class="contents">
+              그 후 무언가에 홀린 듯 지체 없이 바로 직업훈련 과정을 시작했습니다. HTML과 CSS를 이용하여 레이아웃의 제작과 꾸미는 작업을 하고, javascript와 j-query를 활용하여 웹페이지를 생동감 있게 구현하면서 ‘혹시’는 ‘확신’으로 바뀌었고 드디어 제가 그토록 기다리던 “이산가족 상봉”을 한 것입니다.
+            </p>
+          </div>
+          <div class="about_me">
+            <p class="about_me_contents"><span class="bold">Name</span> : 조명구</p>
+            <p class="about_me_contents"><span class="bold">Birthday</span> : 1982.09.15</p>
+            <p class="about_me_contents"><span class="bold">Phone</span> : +82 10 9863 0915</p>
+            <p class="about_me_contents"><span class="bold">Email</span> : ceylontea82@naver.com</p>
+          </div>
+          <div class="hire_learn">
+            <a href="">Hire Me</a>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality 섹션 영역 시작 -->
+    <section id="quality">
+      <div class="title_wrap">
+        <p class="title_1">QUALITY</p>
+        <p class="title_2">MY QUALITY</p>
+      </div>
+      <div class="quality_wrap">
+        <div class="quality_education">
+          <p class="subtitle">My Education</p>
+          <div class="education_box">
+            <span class="vertical_line"></span>
+            <div class="education_contents">
+              <i class="fas fa-dot-circle circle"></i>
+              <p class="bold">그린 컴퓨터 아트 학원 신촌점</p>
+              <p>반응형 웹 디자인(UI/UX) & 웹 퍼블리셔</p>
+              <p>디지털 실무 양성과정 | 2023.12 - 2024.05</p>
+              <p>디자인 리서치 및 비주얼 아이데이션 서비스</p>
+              <p>경험 디자인 조사 및 시나리오개발</p>
+              <p>네이게이션, 구성요소 설계,제작,응용</p>
+              <p>스타일가이드제작 및 시안디자인 제작</p>
+              <p>반응형 웹퍼블리셔</p>
+            </div>
+          </div>
+        </div>
+        <div class="quality_experience">
+          <p class="subtitle">My Experience</p>
+          <div class="experience_box">
+            <span class="vertical_line"></span>
+            <div class="experience_contents">
+              <i class="fas fa-dot-circle circle"></i>
+              <p class="bold">커피스미스 가디점</p>
+              <p>점주 | 2019.07 - 2023.06</p>
+              <p>커피스미스 가디점에서 점주로 4년 동안 운영하였습니다.</p>
+            </div>
+            <div class="experience_contents">
+              <i class="fas fa-dot-circle circle"></i>
+              <p class="bold">커피스미스 천호점</p>
+              <p>매니저 | 2017.08 - 2019.04</p>
+              <p>커피스미스 천호점에서 매니저로 1년6개월 동안 근무하였습니다.</p>
+            </div>
+            <div class="experience_contents">
+              <i class="fas fa-dot-circle circle"></i>
+              <p class="bold">자인메드</p>
+              <p>영업관리 | 2009.03 - 2012.10</p>
+              <p>치과 납품업체 자인메드에서 3년동안 교정재료와 관련된 영업업무를 하였습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill 섹션 영역 시작 -->
+    <section id="skill">
+      <div class="title_wrap">
+        <p class="title_1">SKILLS</p>
+        <p class="title_2">MY SKILLS</p>
+      </div>
+      <div class="skill_wrap">
+        <div class="skill_wrap_box">
+          <div class="skill" aria-valuenow="90">
+            <div class="skill_text">
+              <div class="skill_name">HTML</div>
+              <div class="skill_value">90%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="skill" aria-valuenow="90">
+            <div class="skill_text">
+              <div class="skill_name">CSS</div>
+              <div class="skill_value">90%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="skill" aria-valuenow="90">
+            <div class="skill_text">
+              <div class="skill_name">Figma</div>
+              <div class="skill_value">90%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="skill" aria-valuenow="80">
+            <div class="skill_text">
+              <div class="skill_name">Photoshop</div>
+              <div class="skill_value">80%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill_wrap_box">
+          <div class="skill" aria-valuenow="80">
+            <div class="skill_text">
+              <div class="skill_name">Javascript</div>
+              <div class="skill_value">80%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="skill" aria-valuenow="85">
+            <div class="skill_text">
+              <div class="skill_name">Jquery</div>
+              <div class="skill_value">85%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="skill" aria-valuenow="75">
+            <div class="skill_text">
+              <div class="skill_name">SCSS</div>
+              <div class="skill_value">75%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+          <div class="skill" aria-valuenow="70">
+            <div class="skill_text">
+              <div class="skill_name">React</div>
+              <div class="skill_value">70%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio 섹션 영역 시작 -->
+    <section id="portfolio">
+      <div class="title_wrap">
+        <p class="title_1">PORTFOLIO</p>
+        <p class="title_2">MY PORTFOLIO</p>
+      </div>
+      <div class="portfolio_wrap">
+        <div class="portfolio_select">
+          <ul class="filter_box">
+            <li data-filter="*">ALL</li>
+            <li data-filter=".first">Mobile</li>
+            <li data-filter=".second">Responsive Web</li>
+            <li data-filter=".third">Plan</li>
+          </ul>
+        </div>
+        <div class="portfolio_box">
+          <div class="portfolio_item first">
+            <div class="portfolio_btn">
+              <a class="plus" href="http://ceylontea82.dothome.co.kr/mobile_jmg/" onclick="openMobileLink(event)">
+                <i class="fa fa-plus"></i>
+              </a>
+            </div>
+            <div class="portfolio_mobile img_wrap">
+              <img src="../img/mobile.png" alt="" />
+            </div>
+          </div>
+          <script>
+            function openMobileLink(event) {
+              event.preventDefault();
+              window.open(event.currentTarget.href, '_blank', 'width=480,height=1500');
+            }
+          </script>
+          <div class="portfolio_item second">
+            <div class="portfolio_btn">
+              <a class="plus" href="http://ceylontea82.dothome.co.kr/setting/html/" target="_blank">
+                <i class="fa fa-plus"></i>
+              </a>
+            </div>
+            <div class="portfolio_rwd img_wrap">
+              <img src="../img/rwd.png" alt="" />
+            </div>
+          </div>
+          <div class="portfolio_item third">
+            <div class="portfolio_btn">
+              <a class="plus" href="http://ceylontea82.dothome.co.kr/plan/plan.pdf" target="_blank">
+                <i class="fa fa-plus"></i>
+              </a>
+            </div>
+            <div class="portfolio_rwd img_wrap">
+              <img src="../img/portfolio-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact 섹션 영역 시작 -->
+    <section id="contact">
+      <div class="title_wrap">
+        <p class="title_1">CONTACT</p>
+        <p class="title_2">CONTACT ME</p>
+      </div>
+      <div class="contact_wrap">
+        <form action="">
+          <div class="your_info">
+            <label for="" class="info_contents">
+              <input type="text" placeholder="Your Name" />
+            </label>
+            <label for="" class="info_contents">
+              <input type="text" placeholder="Your Email" />
+            </label>
+          </div>
+          <label for="">
+            <input type="text" placeholder="Subject" />
+          </label>
+          <label for="">
+            <input class="massage" type="text" placeholder="Message" />
+          </label>
+          <button class="contact_btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <a class="top_btn" href="#home"><i class="fa fa-angle-double-up"></i></a>
+  </body>
+</html>
